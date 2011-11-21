@@ -7,6 +7,8 @@
 //
 
 #import "FilterActivitiesViewController.h"
+#import "Activity.h"
+#import "GlobalStore.h"
 
 @implementation FilterActivitiesViewController
 
@@ -57,4 +59,8 @@
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
 }
 
+- (IBAction)searchActivities:(id)sender {
+    [[[GlobalStore getInstance] activitiesFetcher] searchActivities];
+    // TODO left off here, not calling searchActivities...perhaps no activitiesFetcher is allocated?
+}
 @end

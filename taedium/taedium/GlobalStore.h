@@ -8,13 +8,20 @@
 
 #import <Foundation/Foundation.h>
 #import "Account.h"
+#import "ActivitiesFetcher.h"
+
+// Definte constants here
+#define API_URL @"http://taedium.me/api"
 
 @interface GlobalStore : NSObject {
     Account* account;
+    ActivitiesFetcher* activitiesFetcher;
     BOOL loggedIn;
 }
 
+
 @property (nonatomic, copy) Account* account;
+@property (nonatomic, copy) ActivitiesFetcher* activitiesFetcher;
 @property (nonatomic, assign) BOOL loggedIn;
 
 + (GlobalStore*)getInstance;

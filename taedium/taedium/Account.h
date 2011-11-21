@@ -30,6 +30,8 @@
 -(Account*) init;
 -(Account*) initWithUsername: (NSString*) u password: (NSString*) p;
 -(Account*) initWithUsername: (NSString*) u password: (NSString*) p email:(NSString*) e dob:(NSString*) d;
+
+-(NSString*) getUserPassString;
 -(void) loginAccount;
 -(void) registerAccount;
 -(NSMutableDictionary*) getDictionary;

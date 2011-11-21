@@ -47,13 +47,17 @@
     return self;
 }
 
--(Account* )copyWithZone:(NSZone *)zone {
+-(Account*) copyWithZone:(NSZone *)zone {
     return self;
+}
+
+-(NSString*) getUserPassString {
+    return [NSString stringWithFormat:@"%@:%@", self.username, self.password];
 }
 
 // checks to see if login information is valid
 - (void)loginAccount {
-    NSString *address = [NSString stringWithFormat:@"%@/%@", @"http://taedium.me/api/users", self.username];
+    NSString *address = [NSString stringWithFormat:@"%@/%@/%@", API_URL, @"users", self.username];
     
     NSURL *url = [NSURL URLWithString:address];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];

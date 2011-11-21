@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface FilterActivitiesViewController : UIViewController
+- (IBAction)searchActivities:(id)sender;
 
 @end

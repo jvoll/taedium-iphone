@@ -25,6 +25,8 @@
 		9697E6011461E9A4001FA80E /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9697E5F51461E9A4001FA80E /* SBJsonWriter.m */; };
 		96B3663B1468FCAE00D35E9B /* AccountInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B366391468FCAE00D35E9B /* AccountInfoViewController.m */; };
 		96B3663C1468FCAE00D35E9B /* AccountInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96B3663A1468FCAE00D35E9B /* AccountInfoViewController.xib */; };
+		96B378161479B16E00B13F1A /* Activity.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B378151479B16E00B13F1A /* Activity.m */; };
+		96B3781A1479FCFD00B13F1A /* ActivitiesFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B378191479FCFD00B13F1A /* ActivitiesFetcher.m */; };
 		96B756AB1478692F00BEB681 /* GlobalStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B756AA1478692F00BEB681 /* GlobalStore.m */; };
 		96E56805144E71B80008C755 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96E56804144E71B80008C755 /* UIKit.framework */; };
 		96E56807144E71B80008C755 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96E56806144E71B80008C755 /* Foundation.framework */; };
@@ -98,6 +100,10 @@
 		96B366381468FCAE00D35E9B /* AccountInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AccountInfoViewController.h; path = ../AccountInfoViewController.h; sourceTree = "<group>"; };
 		96B366391468FCAE00D35E9B /* AccountInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AccountInfoViewController.m; path = ../AccountInfoViewController.m; sourceTree = "<group>"; };
 		96B3663A1468FCAE00D35E9B /* AccountInfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AccountInfoViewController.xib; path = ../AccountInfoViewController.xib; sourceTree = "<group>"; };
+		96B378141479B16E00B13F1A /* Activity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Activity.h; sourceTree = "<group>"; };
+		96B378151479B16E00B13F1A /* Activity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Activity.m; sourceTree = "<group>"; };
+		96B378181479FCFD00B13F1A /* ActivitiesFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivitiesFetcher.h; sourceTree = "<group>"; };
+		96B378191479FCFD00B13F1A /* ActivitiesFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivitiesFetcher.m; sourceTree = "<group>"; };
 		96B756A91478692F00BEB681 /* GlobalStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalStore.h; sourceTree = "<group>"; };
 		96B756AA1478692F00BEB681 /* GlobalStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlobalStore.m; sourceTree = "<group>"; };
 		96E56800144E71B80008C755 /* taedium.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = taedium.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -183,6 +189,8 @@
 			children = (
 				9620EE4A14513884006F78B6 /* Account.h */,
 				9620EE4B14513884006F78B6 /* Account.m */,
+				96B378141479B16E00B13F1A /* Activity.h */,
+				96B378151479B16E00B13F1A /* Activity.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -305,6 +313,8 @@
 				96E5680B144E71B80008C755 /* Supporting Files */,
 				96B756A91478692F00BEB681 /* GlobalStore.h */,
 				96B756AA1478692F00BEB681 /* GlobalStore.m */,
+				96B378181479FCFD00B13F1A /* ActivitiesFetcher.h */,
+				96B378191479FCFD00B13F1A /* ActivitiesFetcher.m */,
 			);
 			path = taedium;
 			sourceTree = "<group>";
@@ -479,6 +489,8 @@
 				960A98E11467AF0D00A530B6 /* RegisterViewController.m in Sources */,
 				96B3663B1468FCAE00D35E9B /* AccountInfoViewController.m in Sources */,
 				96B756AB1478692F00BEB681 /* GlobalStore.m in Sources */,
+				96B378161479B16E00B13F1A /* Activity.m in Sources */,
+				96B3781A1479FCFD00B13F1A /* ActivitiesFetcher.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

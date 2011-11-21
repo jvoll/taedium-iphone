@@ -10,6 +10,7 @@
 
 @implementation GlobalStore
 @synthesize account;
+@synthesize activitiesFetcher;
 @synthesize loggedIn;
 
 static GlobalStore* myInstance = nil;
